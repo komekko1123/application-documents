@@ -1,0 +1,454 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\ASUS\ComputerOrganization\FinalProject\CPU
+vadd32
+Z1 ID[`V]K:kJ5[Ok3j8@He1A0
+Z2 VU=ZXz5UM7[GT`X^NWc0cQ1
+Z3 dC:\Users\ASUS\ComputerOrganization\FinalProject\CPU
+Z4 w1323725068
+Z5 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/add32.v
+Z6 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/add32.v
+L0 5
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 !s100 eiFOiS^@?cjNCGTdWFVRF3
+Z10 !s108 1686124906.347000
+Z11 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/add32.v|
+Z12 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/add32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU
+Z13 ID`:B5TE=;odJKoA_EMG5j1
+Z14 Vf<[H]GF1?ze5_9PIbm7hP1
+R3
+Z15 w1685846223
+Z16 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU.v
+Z17 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU.v
+L0 1
+R7
+r1
+31
+R8
+Z18 n@a@l@u
+Z19 !s100 l@:P9n[eIlAUb:ADO^6PP1
+Z20 !s108 1686124906.421000
+Z21 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU.v|
+Z22 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valu_ctl
+Z23 I1n7Nh>G^E0CE9S9eEAC<O1
+Z24 V`lEK9;CI`PFo61f[Ee>Ue2
+R3
+Z25 w1686124236
+Z26 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/alu_ctl.v
+Z27 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/alu_ctl.v
+L0 11
+R7
+r1
+31
+R8
+Z28 !s100 gf9>3SETbNQIFVCKBbUkD1
+Z29 !s108 1686124906.473000
+Z30 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/alu_ctl.v|
+Z31 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/alu_ctl.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vALU_slice
+Z32 I07cJA3XCB2?SVjE;o[YbG3
+Z33 V?DH_Xa]fQ^:?O6`fH3V1h0
+R3
+Z34 w1685784053
+Z35 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU_slice.v
+Z36 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU_slice.v
+L0 1
+R7
+r1
+31
+R8
+Z37 n@a@l@u_slice
+Z38 !s100 <T>Kb8[7>WZgHR0Z?IVX43
+Z39 !s108 1686124906.523000
+Z40 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU_slice.v|
+Z41 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ALU_slice.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vbranch_equ
+Z42 I1@]U_X7oD<J8LBHLZ6iKJ2
+Z43 VQ42Z6H_@=Sn<RMN1aC5<Z2
+R3
+Z44 w1685863035
+Z45 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/branch_equ.v
+Z46 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/branch_equ.v
+L0 2
+R7
+r1
+31
+R8
+Z47 !s100 TEgXIfAc9<I^lzi3M3LDL3
+Z48 !s108 1686124906.572000
+Z49 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/branch_equ.v|
+Z50 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/branch_equ.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcontrol_single
+Z51 IbRHVYHHMSW[ZT]h89aa3n0
+Z52 V[eZLAQYGP;4:i`8U<FZHo3
+R3
+Z53 w1685991247
+Z54 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/control_single.v
+Z55 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/control_single.v
+L0 17
+R7
+r1
+31
+R8
+Z56 !s100 TzlI<mBoEi7YYgO4EM3Vo2
+Z57 !s108 1686124906.620000
+Z58 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/control_single.v|
+Z59 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/control_single.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vEX_MEM
+Z60 IRJDciR:N>jmZJ3hjPI@9Q3
+Z61 VmWQG[lLU:TFQWi07fPVB60
+R3
+Z62 w1685870779
+Z63 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/EX_MEM.v
+Z64 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/EX_MEM.v
+L0 2
+R7
+r1
+31
+R8
+Z65 n@e@x_@m@e@m
+Z66 !s100 3aEGII>dUW0k<RK>ELU]c2
+Z67 !s108 1686124906.670000
+Z68 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/EX_MEM.v|
+Z69 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/EX_MEM.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vFA
+Z70 IlT;AHSfNkV2>iHYM^ZCSc0
+Z71 VY5j2^gTTX5VL9kj@olPz?2
+R3
+Z72 w1679411088
+Z73 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/FA.v
+Z74 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/FA.v
+L0 3
+R7
+r1
+31
+R8
+n@f@a
+Z75 !s100 Q@zAP7i4o]G4XHFh]0Ole0
+Z76 !s108 1686124906.721000
+Z77 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/FA.v|
+Z78 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/FA.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vHiLo
+Z79 IAL4HV5GIJ:>jgQ2RcS4^n1
+Z80 Ve3jj0GT[^mo5hmbLGkhnc2
+R3
+Z81 w1686122894
+Z82 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/HiLo.v
+Z83 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/HiLo.v
+L0 1
+R7
+r1
+31
+R8
+Z84 n@hi@lo
+Z85 !s100 N9YT^Bz]m_8`IIg^IGlMX0
+Z86 !s108 1686124906.770000
+Z87 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/HiLo.v|
+Z88 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/HiLo.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vID_EX
+Z89 IgPo?moUP0GhS[Yn4XkF]M1
+Z90 VQiI]McRFJVO9iLJd@df[B3
+R3
+Z91 w1685871054
+Z92 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ID_EX.v
+Z93 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ID_EX.v
+L0 2
+R7
+r1
+31
+R8
+Z94 n@i@d_@e@x
+Z95 !s100 ::G:;OT3Ecj@L26Rzbe>V0
+Z96 !s108 1686124906.817000
+Z97 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ID_EX.v|
+Z98 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/ID_EX.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_ID
+Z99 IC20KI^=[oUl3@e^o[bSU`2
+Z100 VSjFl2k3NJ1U5UdBYEQ6kI0
+R3
+Z101 w1685871053
+Z102 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/IF_ID.v
+Z103 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/IF_ID.v
+L0 2
+R7
+r1
+31
+R8
+Z104 n@i@f_@i@d
+Z105 !s100 0Zl6z?z>CaeM=Sah=9<iT2
+Z106 !s108 1686124906.865000
+Z107 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/IF_ID.v|
+Z108 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/IF_ID.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMEM_WB
+Z109 Id=OhKa@fji@dkBk``3bC;3
+Z110 VNBgQ@bHg8NM2@CAnOoJXH1
+R3
+Z111 w1685871056
+Z112 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/MEM_WB.v
+Z113 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/MEM_WB.v
+L0 2
+R7
+r1
+31
+R8
+Z114 n@m@e@m_@w@b
+Z115 !s100 8[;kKO5o53l4CQAYo=`Tn0
+Z116 !s108 1686124906.912000
+Z117 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/MEM_WB.v|
+Z118 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/MEM_WB.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmemory
+Z119 IC6W6jL6h9KJcIGSO]<jLl1
+Z120 VzdnY<zB[?4K7YzeSdED:m3
+R3
+Z121 w1685871514
+Z122 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/memory.v
+Z123 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/memory.v
+L0 14
+R7
+r1
+31
+R8
+Z124 !s100 MUc0gd2h9QM7Fn1?5?mLE2
+Z125 !s108 1686124906.959000
+Z126 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/memory.v|
+Z127 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/memory.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmips_single
+Z128 IhFk8oX@ekkVJGa]fAkd3R1
+Z129 VgzdPULOV?4TESNV;3BbS?2
+R3
+Z130 w1685991081
+Z131 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mips_single.v
+Z132 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mips_single.v
+L0 3
+R7
+r1
+31
+R8
+Z133 !s100 [][7d=Vk`H?m6jR=VQHng2
+Z134 !s108 1686124907.008000
+Z135 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mips_single.v|
+Z136 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mips_single.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMultiplier
+Z137 Ih4;HmE4]7JhdnodBf35J<1
+Z138 V;e;=ljJ@]Z2f9J3OgEEnH3
+R3
+Z139 w1686123504
+Z140 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Multiplier.v
+Z141 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Multiplier.v
+L0 1
+R7
+r1
+31
+R8
+Z142 n@multiplier
+Z143 !s100 32_<CF>EGk^bRMFhLN[Bo1
+Z144 !s108 1686124907.058000
+Z145 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Multiplier.v|
+Z146 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Multiplier.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux2
+Z147 IY>L0z>GlG[]oFg>6[1Rkd0
+Z148 Vj@f`a>EYID42B4HRj1CP`1
+R3
+Z149 w1323725038
+Z150 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux2.v
+Z151 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux2.v
+L0 5
+R7
+r1
+31
+R8
+Z152 !s100 >DUe^:WZW;hI249LCahhe1
+Z153 !s108 1686124907.154000
+Z154 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux2.v|
+Z155 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux2.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4
+Z156 I:;AmVi6KA]@jf2MY?N1Mc3
+Z157 VZcNTe4Pm`o2ZG_j6H5fVG0
+R3
+Z158 w1685782099
+Z159 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux4.v
+Z160 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux4.v
+L0 5
+R7
+r1
+31
+R8
+Z161 !s100 jKRJI^E>95HG:li1ll2mA2
+Z162 !s108 1686124907.204000
+Z163 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux4.v|
+Z164 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/mux4.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vMux_2to1
+Z165 I16BhKcPKIT=X1hW[367730
+Z166 VfVj0zmo8mcYea@F[HnFFC3
+R3
+Z167 w1685777090
+Z168 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Mux_2to1.v
+Z169 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Mux_2to1.v
+L0 3
+R7
+r1
+31
+R8
+Z170 n@mux_2to1
+Z171 !s100 z[=d:TlU351mkbK59z]^>3
+Z172 !s108 1686124907.107000
+Z173 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Mux_2to1.v|
+Z174 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Mux_2to1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg32
+Z175 IHRiOlSJ=ZJb8PMcbGPKdo0
+Z176 VV?]j^d7dWbJgiS_9bc]CM2
+R3
+Z177 w1685870780
+Z178 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg32.v
+Z179 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg32.v
+L0 13
+R7
+r1
+31
+R8
+Z180 !s100 @degoI6?KGbTR4IcdX`@W0
+Z181 !s108 1686124907.303000
+Z182 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg32.v|
+Z183 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg32.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vreg_file
+Z184 I^9GhkcCin;C;mWBOD?8z]3
+Z185 VHhk4GII8o8R8c89YMHOCg1
+R3
+Z186 w1685871811
+Z187 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg_file.v
+Z188 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg_file.v
+L0 16
+R7
+r1
+31
+R8
+Z189 !s100 EhS?PiMH>fC^962f[Rf:S1
+Z190 !s108 1686124907.254000
+Z191 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg_file.v|
+Z192 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/reg_file.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vShifter
+Z193 IOj8KSk57fz<LGeod5n15B3
+Z194 VNY`noOb>D=BQYYlJ[D3KS2
+R3
+Z195 w1685782562
+Z196 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Shifter.v
+Z197 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Shifter.v
+L0 1
+R7
+r1
+31
+R8
+Z198 n@shifter
+Z199 !s100 bO@D;WESenLaM0BWiEf;41
+Z200 !s108 1686124907.353000
+Z201 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Shifter.v|
+Z202 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/Shifter.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsign_extend
+Z203 I@B9]=2e3>9Y]B^A]Ec7bX1
+Z204 V0n8ATCOUh4>@]U0Sa]?X82
+R3
+Z205 w1323786478
+Z206 8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/sign extend.v
+Z207 FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/sign extend.v
+L0 10
+R7
+r1
+31
+R8
+!i10b 1
+Z208 !s100 Rh[Ahk`d?e1[V0;7]k6k<2
+!s85 0
+Z209 !s108 1686124907.407000
+Z210 !s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/sign extend.v|
+Z211 !s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/sign extend.v|
+!s101 -O0
+vtb_SingleCycle
+!i10b 1
+!s100 c4LAnL`QQ2H49QJ>ad>FY3
+I;PPQmGVdUdY^0JnMoi<[80
+V?^jDZQg<T7eMH8E80iM6b1
+R3
+w1686121305
+8C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/tb_SingleCycle.v
+FC:/Users/ASUS/ComputerOrganization/FinalProject/CPU/tb_SingleCycle.v
+L0 5
+R7
+r1
+!s85 0
+31
+!s108 1686124907.458000
+!s107 C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/tb_SingleCycle.v|
+!s90 -reportprogress|300|-work|work|C:/Users/ASUS/ComputerOrganization/FinalProject/CPU/tb_SingleCycle.v|
+!s101 -O0
+R8
+ntb_@single@cycle

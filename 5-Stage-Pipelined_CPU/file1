@@ -1,0 +1,4998 @@
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                   40, PC:        32
+#                   42, reg_file[21] <=          x (Write)
+#                   41, PC:         x
+#                   43, reg_file[22] <=          x (Write)
+#                   42, PC:         x
+#                   43, PC:         x
+#                   44, PC:         x
+#                   45, PC:         x
+#                   46, PC:         x
+#                   47, PC:         x
+#                   48, PC:         x
+#                   49, PC:         x
+run
+#                   50, PC:         x
+#                   51, PC:         x
+#                   52, PC:         x
+#                   53, PC:         x
+#                   54, PC:         x
+#                   55, PC:         x
+#                   56, PC:         x
+#                   57, PC:         x
+#                   58, PC:         x
+#                   59, PC:         x
+run
+#                   60, PC:         x
+#                   61, PC:         x
+#                   62, PC:         x
+#                   63, PC:         x
+#                   64, PC:         x
+#                   65, PC:         x
+#                   66, PC:         x
+#                   67, PC:         x
+#                   68, PC:         x
+#                   69, PC:         x
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+quit -sim
+vsim -novopt work.tb_SingleCycle
+# vsim -novopt work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+# Break key hit 
+quit -sim
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# 
+# Top level modules:
+# 	alu_ctl
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+add wave -position insertpoint sim:/tb_SingleCycle/*
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+quit -sim
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# 
+# Top level modules:
+# 	alu_ctl
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+quit -sim
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# 
+# Top level modules:
+# 	alu_ctl
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                   40, PC:        32
+#                   42, reg_file[21] <=          x (Write)
+#                   41, PC:         x
+#                   43, reg_file[22] <=          x (Write)
+#                   42, PC:         x
+#                   43, PC:         x
+#                   44, PC:         x
+#                   45, PC:         x
+#                   46, PC:         x
+#                   47, PC:         x
+#                   48, PC:         x
+#                   49, PC:         x
+quit -sim
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vsim -novopt work.tb_SingleCycle
+# vsim -novopt work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          x
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+#                   40, reg_file[ x] =>          x (Port 2)
+#                   40, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                   40, PC:        32
+#                   42, reg_file[21] <=          0 (Write)
+#                   41, PC:         x
+#                   43, reg_file[22] <=         20 (Write)
+#                   42, PC:         x
+#                   43, PC:         x
+#                   44, PC:         x
+#                   45, PC:         x
+#                   46, PC:         x
+#                   47, PC:         x
+#                   48, PC:         x
+#                   49, PC:         x
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          x
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          0
+#                   39, PC:        28
+#                   39, wd:          x
+#                   39, MFLO
+# 
+run
+#                   40, PC:        32
+#                   40, wd:          x
+#                   40, NOP
+# 
+#                   42, reg_file[21] <=          0 (Write)
+#                   41, PC:        36
+#                   41, wd:          0
+#                   41, NOP
+# 
+#                   43, reg_file[22] <=         20 (Write)
+#                   42, PC:        40
+#                   42, wd:         20
+#                   42, NOP
+# 
+#                   43, reading data: Mem[        44] => 1920204801
+#                   43, PC:        44
+#                   43, wd:          x
+#                   43, NOP
+# 
+#                   44, reading data: Mem[        48] =>          0
+#                   44, reg_file[20] =>          5 (Port 2)
+#                   44, reg_file[19] =>          4 (Port 1)
+#                   44, PC:        48
+#                   44, MADDU
+# 
+#                   45, reg_file[ 0] =>          0 (Port 2)
+#                   45, reg_file[ 0] =>          0 (Port 1)
+#                   45, PC:        52
+#                   45, wd:          x
+#                   45, NOP
+# 
+#                   46, PC:        52
+#                   46, wd:          x
+#                   46, NOP
+# 
+#                   47, PC:        52
+#                   47, wd:          x
+#                   47, NOP
+# 
+#                   48, PC:        52
+#                   48, wd:          x
+#                   48, NOP
+# 
+#                   49, PC:        52
+#                   49, wd:          x
+#                   49, NOP
+# 
+run
+#                   50, PC:        52
+#                   50, wd:          x
+#                   50, NOP
+# 
+#                   51, PC:        52
+#                   51, wd:          x
+#                   51, NOP
+# 
+#                   52, PC:        52
+#                   52, wd:          x
+#                   52, NOP
+# 
+#                   53, PC:        52
+#                   53, wd:          x
+#                   53, NOP
+# 
+#                   54, PC:        52
+#                   54, wd:          x
+#                   54, NOP
+# 
+#                   55, PC:        52
+#                   55, wd:          x
+#                   55, NOP
+# 
+#                   56, PC:        52
+#                   56, wd:          x
+#                   56, NOP
+# 
+#                   57, PC:        52
+#                   57, wd:          x
+#                   57, NOP
+# 
+#                   58, PC:        52
+#                   58, wd:          x
+#                   58, NOP
+# 
+#                   59, PC:        52
+#                   59, wd:          x
+#                   59, NOP
+# 
+run
+#                   60, PC:        52
+#                   60, wd:          x
+#                   60, NOP
+# 
+#                   61, PC:        52
+#                   61, wd:          x
+#                   61, NOP
+# 
+#                   62, PC:        52
+#                   62, wd:          x
+#                   62, NOP
+# 
+#                   63, PC:        52
+#                   63, wd:          x
+#                   63, NOP
+# 
+#                   64, PC:        52
+#                   64, wd:          x
+#                   64, NOP
+# 
+#                   65, PC:        52
+#                   65, wd:          x
+#                   65, NOP
+# 
+#                   66, PC:        52
+#                   66, wd:          x
+#                   66, NOP
+# 
+#                   67, PC:        52
+#                   67, wd:          x
+#                   67, NOP
+# 
+#                   68, PC:        52
+#                   68, wd:          x
+#                   68, NOP
+# 
+#                   69, PC:        52
+#                   69, wd:          x
+#                   69, NOP
+# 
+run
+#                   70, PC:        52
+#                   70, wd:          x
+#                   70, NOP
+# 
+#                   71, PC:        52
+#                   71, wd:          x
+#                   71, NOP
+# 
+#                   72, PC:        52
+#                   72, wd:          x
+#                   72, NOP
+# 
+#                   73, PC:        52
+#                   73, wd:          x
+#                   73, NOP
+# 
+#                   74, PC:        52
+#                   74, wd:          x
+#                   74, NOP
+# 
+#                   75, PC:        52
+#                   75, wd:          x
+#                   75, NOP
+# 
+#                   76, PC:        52
+#                   76, wd:          x
+#                   76, NOP
+# 
+#                   77, PC:        52
+#                   77, wd:          x
+#                   77, NOP
+# 
+#                   78, PC:        56
+#                   78, wd:          x
+#                   78, NOP
+# 
+#                   79, PC:        60
+#                   79, wd:          x
+#                   79, NOP
+# 
+#                   80, reading data: Mem[        64] =>      43024
+run
+#                   80, PC:        64
+#                   80, wd:          x
+#                   80, NOP
+# 
+#                   81, reading data: Mem[        68] =>      45074
+#                   81, PC:        68
+#                   81, wd:          x
+#                   81, MFHI
+# 
+#                   82, reading data: Mem[        72] =>          x
+#                   82, PC:        72
+#                   82, wd:          x
+#                   82, MFLO
+# 
+#                   83, reg_file[ x] =>          x (Port 2)
+#                   83, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+#                   83, PC:        76
+#                   85, reg_file[21] <=          0 (Write)
+#                   84, PC:         x
+#                   86, reg_file[22] <=         40 (Write)
+#                   85, PC:         x
+#                   86, PC:         x
+#                   87, PC:         x
+#                   88, PC:         x
+#                   89, PC:         x
+# A time value could not be extracted from the current line
+quit -sim
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# ** Error: D:/z/alu_ctl.v(58): near "=": syntax error, unexpected '=', expecting ++ or --
+# ** Error: D:/z/alu_ctl.v(61): near "default": syntax error, unexpected default
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# 
+# Top level modules:
+# 	alu_ctl
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          0
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          4
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          0
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          0
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          0
+#                   39, PC:        28
+#                   39, wd:          0
+#                   39, MFLO
+# 
+run
+#                   40, PC:        32
+#                   40, wd:          0
+#                   40, NOP
+# 
+#                   42, reg_file[21] <=          0 (Write)
+#                   41, PC:        36
+#                   41, wd:          0
+#                   41, NOP
+# 
+#                   43, reg_file[22] <=         20 (Write)
+#                   42, PC:        40
+#                   42, wd:         20
+#                   42, NOP
+# 
+#                   43, reading data: Mem[        44] => 1920204801
+#                   43, PC:        44
+#                   43, wd:          0
+#                   43, NOP
+# 
+#                   44, reading data: Mem[        48] =>          0
+#                   44, reg_file[20] =>          5 (Port 2)
+#                   44, reg_file[19] =>          4 (Port 1)
+#                   44, PC:        48
+#                   44, MADDU
+# 
+#                   45, reg_file[ 0] =>          0 (Port 2)
+#                   45, reg_file[ 0] =>          0 (Port 1)
+#                   45, PC:        52
+#                   45, wd:          0
+#                   45, NOP
+# 
+#                   46, PC:        52
+#                   46, wd:          0
+#                   46, NOP
+# 
+#                   47, PC:        52
+#                   47, wd:          0
+#                   47, NOP
+# 
+#                   48, PC:        52
+#                   48, wd:          0
+#                   48, NOP
+# 
+#                   49, PC:        52
+#                   49, wd:          0
+#                   49, NOP
+# 
+run
+#                   50, PC:        52
+#                   50, wd:          0
+#                   50, NOP
+# 
+#                   51, PC:        52
+#                   51, wd:          0
+#                   51, NOP
+# 
+#                   52, PC:        52
+#                   52, wd:          0
+#                   52, NOP
+# 
+#                   53, PC:        52
+#                   53, wd:          0
+#                   53, NOP
+# 
+#                   54, PC:        52
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   55, PC:        52
+#                   55, wd:          0
+#                   55, NOP
+# 
+#                   56, PC:        52
+#                   56, wd:          0
+#                   56, NOP
+# 
+#                   57, PC:        52
+#                   57, wd:          0
+#                   57, NOP
+# 
+#                   58, PC:        52
+#                   58, wd:          0
+#                   58, NOP
+# 
+#                   59, PC:        52
+#                   59, wd:          0
+#                   59, NOP
+# 
+run
+#                   60, PC:        52
+#                   60, wd:          0
+#                   60, NOP
+# 
+#                   61, PC:        52
+#                   61, wd:          0
+#                   61, NOP
+# 
+#                   62, PC:        52
+#                   62, wd:          0
+#                   62, NOP
+# 
+#                   63, PC:        52
+#                   63, wd:          0
+#                   63, NOP
+# 
+#                   64, PC:        52
+#                   64, wd:          0
+#                   64, NOP
+# 
+#                   65, PC:        52
+#                   65, wd:          0
+#                   65, NOP
+# 
+#                   66, PC:        52
+#                   66, wd:          0
+#                   66, NOP
+# 
+#                   67, PC:        52
+#                   67, wd:          0
+#                   67, NOP
+# 
+#                   68, PC:        52
+#                   68, wd:          0
+#                   68, NOP
+# 
+#                   69, PC:        52
+#                   69, wd:          0
+#                   69, NOP
+# 
+run
+#                   70, PC:        52
+#                   70, wd:          0
+#                   70, NOP
+# 
+#                   71, PC:        52
+#                   71, wd:          0
+#                   71, NOP
+# 
+#                   72, PC:        52
+#                   72, wd:          0
+#                   72, NOP
+# 
+#                   73, PC:        52
+#                   73, wd:          0
+#                   73, NOP
+# 
+#                   74, PC:        52
+#                   74, wd:          0
+#                   74, NOP
+# 
+#                   75, PC:        52
+#                   75, wd:          0
+#                   75, NOP
+# 
+#                   76, PC:        52
+#                   76, wd:          0
+#                   76, NOP
+# 
+#                   77, PC:        52
+#                   77, wd:          0
+#                   77, NOP
+# 
+#                   78, PC:        56
+#                   78, wd:          0
+#                   78, NOP
+# 
+#                   79, PC:        60
+#                   79, wd:          4
+#                   79, NOP
+# 
+#                   80, reading data: Mem[        64] =>      43024
+run
+#                   80, PC:        64
+#                   80, wd:          0
+#                   80, NOP
+# 
+#                   81, reading data: Mem[        68] =>      45074
+#                   81, PC:        68
+#                   81, wd:          0
+#                   81, MFHI
+# 
+#                   82, reading data: Mem[        72] =>          x
+#                   82, PC:        72
+#                   82, wd:          0
+#                   82, MFLO
+# 
+#                   83, reg_file[ x] =>          x (Port 2)
+#                   83, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+#                   83, PC:        76
+#                   85, reg_file[21] <=          0 (Write)
+#                   84, PC:         x
+#                   86, reg_file[22] <=         40 (Write)
+#                   85, PC:         x
+#                   86, PC:         x
+#                   87, PC:         x
+#                   88, PC:         x
+#                   89, PC:         x
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   41156633
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>          0
+#                    1, reg_file[20] =>          5 (Port 2)
+#                    1, reg_file[19] =>          4 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, MULTU
+# 
+#                    2, reg_file[ 0] =>          0 (Port 2)
+#                    2, reg_file[ 0] =>          0 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, NOP
+# 
+#                    3, PC:         8
+#                    3, wd:          0
+#                    3, NOP
+# 
+#                    4, PC:         8
+#                    4, wd:          0
+#                    4, NOP
+# 
+#                    5, PC:         8
+#                    5, wd:          0
+#                    5, NOP
+# 
+#                    6, PC:         8
+#                    6, wd:          0
+#                    6, NOP
+# 
+#                    7, PC:         8
+#                    7, wd:          0
+#                    7, NOP
+# 
+#                    8, PC:         8
+#                    8, wd:          0
+#                    8, NOP
+# 
+#                    9, PC:         8
+#                    9, wd:          0
+#                    9, NOP
+# 
+run
+#                   10, PC:         8
+#                   10, wd:          0
+#                   10, NOP
+# 
+#                   11, PC:         8
+#                   11, wd:          0
+#                   11, NOP
+# 
+#                   12, PC:         8
+#                   12, wd:          0
+#                   12, NOP
+# 
+#                   13, PC:         8
+#                   13, wd:          0
+#                   13, NOP
+# 
+#                   14, PC:         8
+#                   14, wd:          0
+#                   14, NOP
+# 
+#                   15, PC:         8
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:         8
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:         8
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:         8
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:         8
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:         8
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:         8
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:         8
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:         8
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:         8
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:         8
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:         8
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:         8
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:         8
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:         8
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:         8
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:         8
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:         8
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:         8
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:         8
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        12
+#                   35, wd:          0
+#                   35, NOP
+# 
+#                   36, PC:        16
+#                   36, wd:          4
+#                   36, NOP
+# 
+#                   37, reading data: Mem[        20] =>      43024
+#                   37, PC:        20
+#                   37, wd:          0
+#                   37, NOP
+# 
+#                   38, reading data: Mem[        24] =>      45074
+#                   38, PC:        24
+#                   38, wd:          0
+#                   38, MFHI
+# 
+#                   39, reading data: Mem[        28] =>          0
+#                   39, PC:        28
+#                   39, wd:          0
+#                   39, MFLO
+# 
+run
+#                   40, PC:        32
+#                   40, wd:          0
+#                   40, NOP
+# 
+#                   42, reg_file[21] <=          0 (Write)
+#                   41, PC:        36
+#                   41, wd:          0
+#                   41, NOP
+# 
+#                   43, reg_file[22] <=         20 (Write)
+#                   42, PC:        40
+#                   42, wd:         20
+#                   42, NOP
+# 
+#                   43, reading data: Mem[        44] => 1920204801
+#                   43, PC:        44
+#                   43, wd:          0
+#                   43, NOP
+# 
+#                   44, reading data: Mem[        48] =>          0
+#                   44, reg_file[20] =>          5 (Port 2)
+#                   44, reg_file[19] =>          4 (Port 1)
+#                   44, PC:        48
+#                   44, MADDU
+# 
+#                   45, reg_file[ 0] =>          0 (Port 2)
+#                   45, reg_file[ 0] =>          0 (Port 1)
+#                   45, PC:        52
+#                   45, wd:          0
+#                   45, NOP
+# 
+#                   46, PC:        52
+#                   46, wd:          0
+#                   46, NOP
+# 
+#                   47, PC:        52
+#                   47, wd:          0
+#                   47, NOP
+# 
+#                   48, PC:        52
+#                   48, wd:          0
+#                   48, NOP
+# 
+#                   49, PC:        52
+#                   49, wd:          0
+#                   49, NOP
+# 
+run
+#                   50, PC:        52
+#                   50, wd:          0
+#                   50, NOP
+# 
+#                   51, PC:        52
+#                   51, wd:          0
+#                   51, NOP
+# 
+#                   52, PC:        52
+#                   52, wd:          0
+#                   52, NOP
+# 
+#                   53, PC:        52
+#                   53, wd:          0
+#                   53, NOP
+# 
+#                   54, PC:        52
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   55, PC:        52
+#                   55, wd:          0
+#                   55, NOP
+# 
+#                   56, PC:        52
+#                   56, wd:          0
+#                   56, NOP
+# 
+#                   57, PC:        52
+#                   57, wd:          0
+#                   57, NOP
+# 
+#                   58, PC:        52
+#                   58, wd:          0
+#                   58, NOP
+# 
+#                   59, PC:        52
+#                   59, wd:          0
+#                   59, NOP
+# 
+run
+#                   60, PC:        52
+#                   60, wd:          0
+#                   60, NOP
+# 
+#                   61, PC:        52
+#                   61, wd:          0
+#                   61, NOP
+# 
+#                   62, PC:        52
+#                   62, wd:          0
+#                   62, NOP
+# 
+#                   63, PC:        52
+#                   63, wd:          0
+#                   63, NOP
+# 
+#                   64, PC:        52
+#                   64, wd:          0
+#                   64, NOP
+# 
+#                   65, PC:        52
+#                   65, wd:          0
+#                   65, NOP
+# 
+#                   66, PC:        52
+#                   66, wd:          0
+#                   66, NOP
+# 
+#                   67, PC:        52
+#                   67, wd:          0
+#                   67, NOP
+# 
+#                   68, PC:        52
+#                   68, wd:          0
+#                   68, NOP
+# 
+#                   69, PC:        52
+#                   69, wd:          0
+#                   69, NOP
+# 
+run
+#                   70, PC:        52
+#                   70, wd:          0
+#                   70, NOP
+# 
+#                   71, PC:        52
+#                   71, wd:          0
+#                   71, NOP
+# 
+#                   72, PC:        52
+#                   72, wd:          0
+#                   72, NOP
+# 
+#                   73, PC:        52
+#                   73, wd:          0
+#                   73, NOP
+# 
+#                   74, PC:        52
+#                   74, wd:          0
+#                   74, NOP
+# 
+#                   75, PC:        52
+#                   75, wd:          0
+#                   75, NOP
+# 
+#                   76, PC:        52
+#                   76, wd:          0
+#                   76, NOP
+# 
+#                   77, PC:        52
+#                   77, wd:          0
+#                   77, NOP
+# 
+#                   78, PC:        56
+#                   78, wd:          0
+#                   78, NOP
+# 
+#                   79, PC:        60
+#                   79, wd:          4
+#                   79, NOP
+# 
+#                   80, reading data: Mem[        64] =>      43024
+run
+#                   80, PC:        64
+#                   80, wd:          0
+#                   80, NOP
+# 
+#                   81, reading data: Mem[        68] =>      45074
+#                   81, PC:        68
+#                   81, wd:          0
+#                   81, MFHI
+# 
+#                   82, reading data: Mem[        72] =>          x
+#                   82, PC:        72
+#                   82, wd:          0
+#                   82, MFLO
+# 
+#                   83, reg_file[ x] =>          x (Port 2)
+#                   83, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+#                   83, PC:        76
+#                   85, reg_file[21] <=          0 (Write)
+#                   84, PC:         x
+#                   86, reg_file[22] <=         40 (Write)
+#                   85, PC:         x
+#                   86, PC:         x
+#                   87, PC:         x
+#                   88, PC:         x
+#                   89, PC:         x
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   17387552
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>   19421218
+#                    1, reg_file[ 9] =>          2 (Port 2)
+#                    1, reg_file[ 8] =>          1 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, ADD
+# 
+#                    2, reading data: Mem[         8] =>   17391652
+#                    2, reg_file[ 8] =>          1 (Port 2)
+#                    2, reg_file[ 9] =>          2 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, SUB
+# 
+#                    3, reading data: Mem[        12] =>   17393701
+#                    3, reg_file[ 9] =>          2 (Port 2)
+#                    3, reg_file[ 8] =>          1 (Port 1)
+#                    3, PC:        12
+#                    3, wd:          0
+#                    3, AND
+# 
+#                    4, reading data: Mem[        16] =>     618562
+#                    5, reg_file[10] <=          3 (Write)
+#                    4, PC:        16
+#                    4, wd:          3
+#                    4, OR
+# 
+#                    5, reading data: Mem[        20] =>   17397802
+#                    5, reg_file[ 0] =>          0 (Port 1)
+#                    6, reg_file[11] <=          1 (Write)
+#                    5, PC:        20
+#                    5, wd:          1
+#                    5, SRL
+# 
+#                    6, reading data: Mem[        24] =>  621805570
+#                    6, reg_file[ 8] =>          1 (Port 1)
+#                    7, reg_file[12] <=          0 (Write)
+#                    6, PC:        24
+#                    6, wd:          0
+#                    6, SLT
+# 
+#                    7, reading data: Mem[        28] => 2349924354
+#                    7, reg_file[16] =>          1 (Port 2)
+#                    8, reg_file[13] <=          3 (Write)
+#                    7, PC:        28
+#                    7, ADDIU
+# 
+#                    8, reading data: Mem[        32] => 2886860806
+#                    8, reg_file[ 0] =>          0 (Port 1)
+#                    8, reg_file[17] =>          2 (Port 2)
+#                    9, reg_file[14] <=          1 (Write)
+#                    8, PC:        32
+#                    8, LW
+# 
+#                    9, reading data: Mem[        36] =>  134217740
+#                    9, reg_file[18] =>          3 (Port 2)
+#                   10, reg_file[15] <=          1 (Write)
+#                    9, PC:        36
+#                    9, SW
+# 
+#                   10, reading data: Mem[        40] =>          0
+#                   10, reading data: Mem[         2] =>        256
+#                   10, reg_file[ 0] =>          0 (Port 2)
+run
+#                   11, reg_file[16] <=          3 (Write)
+#                   10, PC:        40
+#                   10, J
+# 
+#                   12, reg_file[17] <=        256 (Write)
+#                   12, writing data: Mem[         6] <=          3
+#                   11, PC:        48
+#                   11, wd:        256
+#                   11, NOP
+# 
+#                   12, PC:        52
+#                   12, wd:          x
+#                   12, NOP
+# 
+#                   13, reading data: Mem[        56] =>   41156633
+#                   13, PC:        56
+#                   13, wd:          x
+#                   13, NOP
+# 
+#                   14, reading data: Mem[        60] =>          0
+#                   14, reg_file[20] =>          5 (Port 2)
+#                   14, reg_file[19] =>          4 (Port 1)
+#                   14, PC:        60
+#                   14, wd:          0
+#                   14, MULTU
+# 
+#                   15, reg_file[ 0] =>          0 (Port 2)
+#                   15, reg_file[ 0] =>          0 (Port 1)
+#                   15, PC:        64
+#                   15, wd:          0
+#                   15, NOP
+# 
+#                   16, PC:        64
+#                   16, wd:          0
+#                   16, NOP
+# 
+#                   17, PC:        64
+#                   17, wd:          0
+#                   17, NOP
+# 
+#                   18, PC:        64
+#                   18, wd:          0
+#                   18, NOP
+# 
+#                   19, PC:        64
+#                   19, wd:          0
+#                   19, NOP
+# 
+run
+#                   20, PC:        64
+#                   20, wd:          0
+#                   20, NOP
+# 
+#                   21, PC:        64
+#                   21, wd:          0
+#                   21, NOP
+# 
+#                   22, PC:        64
+#                   22, wd:          0
+#                   22, NOP
+# 
+#                   23, PC:        64
+#                   23, wd:          0
+#                   23, NOP
+# 
+#                   24, PC:        64
+#                   24, wd:          0
+#                   24, NOP
+# 
+#                   25, PC:        64
+#                   25, wd:          0
+#                   25, NOP
+# 
+#                   26, PC:        64
+#                   26, wd:          0
+#                   26, NOP
+# 
+#                   27, PC:        64
+#                   27, wd:          0
+#                   27, NOP
+# 
+#                   28, PC:        64
+#                   28, wd:          0
+#                   28, NOP
+# 
+#                   29, PC:        64
+#                   29, wd:          0
+#                   29, NOP
+# 
+run
+#                   30, PC:        64
+#                   30, wd:          0
+#                   30, NOP
+# 
+#                   31, PC:        64
+#                   31, wd:          0
+#                   31, NOP
+# 
+#                   32, PC:        64
+#                   32, wd:          0
+#                   32, NOP
+# 
+#                   33, PC:        64
+#                   33, wd:          0
+#                   33, NOP
+# 
+#                   34, PC:        64
+#                   34, wd:          0
+#                   34, NOP
+# 
+#                   35, PC:        64
+#                   35, wd:          0
+#                   35, NOP
+# 
+#                   36, PC:        64
+#                   36, wd:          0
+#                   36, NOP
+# 
+#                   37, PC:        64
+#                   37, wd:          0
+#                   37, NOP
+# 
+#                   38, PC:        64
+#                   38, wd:          0
+#                   38, NOP
+# 
+#                   39, PC:        64
+#                   39, wd:          0
+#                   39, NOP
+# 
+run
+#                   40, PC:        64
+#                   40, wd:          0
+#                   40, NOP
+# 
+#                   41, PC:        64
+#                   41, wd:          0
+#                   41, NOP
+# 
+#                   42, PC:        64
+#                   42, wd:          0
+#                   42, NOP
+# 
+#                   43, PC:        64
+#                   43, wd:          0
+#                   43, NOP
+# 
+#                   44, PC:        64
+#                   44, wd:          0
+#                   44, NOP
+# 
+#                   45, PC:        64
+#                   45, wd:          0
+#                   45, NOP
+# 
+#                   46, PC:        64
+#                   46, wd:          0
+#                   46, NOP
+# 
+#                   47, PC:        64
+#                   47, wd:          0
+#                   47, NOP
+# 
+#                   48, PC:        68
+#                   48, wd:          0
+#                   48, NOP
+# 
+#                   49, PC:        72
+#                   49, wd:          4
+#                   49, NOP
+# 
+#                   50, reading data: Mem[        76] =>      43024
+run
+#                   50, PC:        76
+#                   50, wd:          0
+#                   50, NOP
+# 
+#                   51, reading data: Mem[        80] =>      45074
+#                   51, PC:        80
+#                   51, wd:          0
+#                   51, MFHI
+# 
+#                   52, reading data: Mem[        84] => 1920204801
+#                   52, PC:        84
+#                   52, wd:          0
+#                   52, MFLO
+# 
+#                   53, reading data: Mem[        88] =>          0
+#                   53, reg_file[20] =>          5 (Port 2)
+#                   53, reg_file[19] =>          4 (Port 1)
+#                   53, PC:        88
+#                   53, MADDU
+# 
+#                   54, reg_file[ 0] =>          0 (Port 2)
+#                   54, reg_file[ 0] =>          0 (Port 1)
+#                   54, PC:        92
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   55, PC:        92
+#                   55, wd:          0
+#                   55, NOP
+# 
+#                   56, PC:        92
+#                   56, wd:          0
+#                   56, NOP
+# 
+#                   57, PC:        92
+#                   57, wd:          0
+#                   57, NOP
+# 
+#                   58, PC:        92
+#                   58, wd:          0
+#                   58, NOP
+# 
+#                   59, PC:        92
+#                   59, wd:          0
+#                   59, NOP
+# 
+run
+#                   60, PC:        92
+#                   60, wd:          0
+#                   60, NOP
+# 
+#                   61, PC:        92
+#                   61, wd:          0
+#                   61, NOP
+# 
+#                   62, PC:        92
+#                   62, wd:          0
+#                   62, NOP
+# 
+#                   63, PC:        92
+#                   63, wd:          0
+#                   63, NOP
+# 
+#                   64, PC:        92
+#                   64, wd:          0
+#                   64, NOP
+# 
+#                   65, PC:        92
+#                   65, wd:          0
+#                   65, NOP
+# 
+#                   66, PC:        92
+#                   66, wd:          0
+#                   66, NOP
+# 
+#                   67, PC:        92
+#                   67, wd:          0
+#                   67, NOP
+# 
+#                   68, PC:        92
+#                   68, wd:          0
+#                   68, NOP
+# 
+#                   69, PC:        92
+#                   69, wd:          0
+#                   69, NOP
+# 
+run
+#                   70, PC:        92
+#                   70, wd:          0
+#                   70, NOP
+# 
+#                   71, PC:        92
+#                   71, wd:          0
+#                   71, NOP
+# 
+#                   72, PC:        92
+#                   72, wd:          0
+#                   72, NOP
+# 
+#                   73, PC:        92
+#                   73, wd:          0
+#                   73, NOP
+# 
+#                   74, PC:        92
+#                   74, wd:          0
+#                   74, NOP
+# 
+#                   75, PC:        92
+#                   75, wd:          0
+#                   75, NOP
+# 
+#                   76, PC:        92
+#                   76, wd:          0
+#                   76, NOP
+# 
+#                   77, PC:        92
+#                   77, wd:          0
+#                   77, NOP
+# 
+#                   78, PC:        92
+#                   78, wd:          0
+#                   78, NOP
+# 
+#                   79, PC:        92
+#                   79, wd:          0
+#                   79, NOP
+# 
+run
+#                   80, PC:        92
+#                   80, wd:          0
+#                   80, NOP
+# 
+#                   81, PC:        92
+#                   81, wd:          0
+#                   81, NOP
+# 
+#                   82, PC:        92
+#                   82, wd:          0
+#                   82, NOP
+# 
+#                   83, PC:        92
+#                   83, wd:          0
+#                   83, NOP
+# 
+#                   84, PC:        92
+#                   84, wd:          0
+#                   84, NOP
+# 
+#                   85, PC:        92
+#                   85, wd:          0
+#                   85, NOP
+# 
+#                   87, reg_file[21] <=          0 (Write)
+#                   86, PC:        92
+#                   86, wd:          0
+#                   86, NOP
+# 
+#                   88, reg_file[22] <=         20 (Write)
+#                   87, PC:        96
+#                   87, wd:         20
+#                   87, NOP
+# 
+#                   88, PC:       100
+#                   88, wd:          4
+#                   88, NOP
+# 
+#                   89, reading data: Mem[       104] =>      43024
+#                   89, PC:       104
+#                   89, wd:          0
+#                   89, NOP
+# 
+#                   90, reading data: Mem[       108] =>      45074
+run
+#                   90, PC:       108
+#                   90, wd:          0
+#                   90, MFHI
+# 
+#                   91, reading data: Mem[       112] =>          x
+#                   91, PC:       112
+#                   91, wd:          0
+#                   91, MFLO
+# 
+#                   92, reg_file[ x] =>          x (Port 2)
+#                   92, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+#                   92, PC:       116
+#                   94, reg_file[21] <=          0 (Write)
+#                   93, PC:         x
+#                   95, reg_file[22] <=         40 (Write)
+#                   94, PC:         x
+#                   95, PC:         x
+#                   96, PC:         x
+#                   97, PC:         x
+#                   98, PC:         x
+#                   99, PC:         x
+run
+#                  100, PC:         x
+#                  101, PC:         x
+#                  102, PC:         x
+#                  103, PC:         x
+#                  104, PC:         x
+#                  105, PC:         x
+#                  106, PC:         x
+#                  107, PC:         x
+#                  108, PC:         x
+#                  109, PC:         x
+quit -sim
+vlog -reportprogress 300 -work work D:/z/add32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module add32
+# 
+# Top level modules:
+# 	add32
+vlog -reportprogress 300 -work work D:/z/ALU.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+vlog -reportprogress 300 -work work D:/z/alu_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu_ctl
+# 
+# Top level modules:
+# 	alu_ctl
+vlog -reportprogress 300 -work work D:/z/ALU_slice.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU_slice
+# 
+# Top level modules:
+# 	ALU_slice
+vlog -reportprogress 300 -work work D:/z/branch_equ.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module branch_equ
+# 
+# Top level modules:
+# 	branch_equ
+vlog -reportprogress 300 -work work D:/z/control_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_single
+# 
+# Top level modules:
+# 	control_single
+vlog -reportprogress 300 -work work D:/z/EX_MEM.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module EX_MEM
+# 
+# Top level modules:
+# 	EX_MEM
+vlog -reportprogress 300 -work work D:/z/FA.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module FA
+# 
+# Top level modules:
+# 	FA
+vlog -reportprogress 300 -work work D:/z/HiLo.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module HiLo
+# 
+# Top level modules:
+# 	HiLo
+vlog -reportprogress 300 -work work D:/z/ID_EX.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ID_EX
+# 
+# Top level modules:
+# 	ID_EX
+vlog -reportprogress 300 -work work D:/z/IF_ID.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IF_ID
+# 
+# Top level modules:
+# 	IF_ID
+vlog -reportprogress 300 -work work D:/z/MEM_WB.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module MEM_WB
+# 
+# Top level modules:
+# 	MEM_WB
+vlog -reportprogress 300 -work work D:/z/memory.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module memory
+# 
+# Top level modules:
+# 	memory
+vlog -reportprogress 300 -work work D:/z/mips_single.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mips_single
+# 
+# Top level modules:
+# 	mips_single
+vlog -reportprogress 300 -work work D:/z/Multiplier.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Multiplier
+# 
+# Top level modules:
+# 	Multiplier
+vlog -reportprogress 300 -work work D:/z/Mux_2to1.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Mux_2to1
+# 
+# Top level modules:
+# 	Mux_2to1
+vlog -reportprogress 300 -work work D:/z/mux2.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+vlog -reportprogress 300 -work work D:/z/mux4.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux4
+# 
+# Top level modules:
+# 	mux4
+vlog -reportprogress 300 -work work D:/z/reg_file.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+vlog -reportprogress 300 -work work D:/z/reg32.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module reg32
+# 
+# Top level modules:
+# 	reg32
+vlog -reportprogress 300 -work work D:/z/Shifter.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Shifter
+# 
+# Top level modules:
+# 	Shifter
+vlog -reportprogress 300 -work work {D:/z/sign extend.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sign_extend
+# 
+# Top level modules:
+# 	sign_extend
+vlog -reportprogress 300 -work work D:/z/tb_SingleCycle.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module tb_SingleCycle
+# 
+# Top level modules:
+# 	tb_SingleCycle
+vsim -novopt work.tb_SingleCycle
+# vsim -novopt work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   17387552
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>   19421218
+#                    1, reg_file[ 9] =>          2 (Port 2)
+#                    1, reg_file[ 8] =>          1 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, ADD
+# 
+#                    2, reading data: Mem[         8] =>   17391652
+#                    2, reg_file[ 8] =>          1 (Port 2)
+#                    2, reg_file[ 9] =>          2 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, SUB
+# 
+#                    3, reading data: Mem[        12] =>   17393701
+#                    3, reg_file[ 9] =>          2 (Port 2)
+#                    3, reg_file[ 8] =>          1 (Port 1)
+#                    3, PC:        12
+#                    3, wd:          x
+#                    3, AND
+# 
+#                    4, reading data: Mem[        16] =>     618562
+#                    5, reg_file[10] <=          3 (Write)
+#                    4, PC:        16
+#                    4, wd:          3
+#                    4, OR
+# 
+#                    5, reading data: Mem[        20] =>   17397802
+#                    5, reg_file[ 0] =>          0 (Port 1)
+#                    6, reg_file[11] <=          1 (Write)
+#                    5, PC:        20
+#                    5, wd:          1
+#                    5, SRL
+# 
+#                    6, reading data: Mem[        24] =>  621805570
+#                    6, reg_file[ 8] =>          1 (Port 1)
+#                    7, reg_file[12] <=          0 (Write)
+#                    6, PC:        24
+#                    6, wd:          0
+#                    6, SLT
+# 
+#                    7, reading data: Mem[        28] => 2349924354
+#                    7, reg_file[16] =>          1 (Port 2)
+#                    8, reg_file[13] <=          3 (Write)
+#                    7, PC:        28
+#                    7, ADDIU
+# 
+#                    8, reading data: Mem[        32] => 2886860806
+#                    8, reg_file[ 0] =>          0 (Port 1)
+#                    8, reg_file[17] =>          2 (Port 2)
+#                    9, reg_file[14] <=          1 (Write)
+#                    8, PC:        32
+#                    8, LW
+# 
+#                    9, reading data: Mem[        36] =>  134217740
+#                    9, reg_file[18] =>          3 (Port 2)
+#                   10, reg_file[15] <=          1 (Write)
+#                    9, PC:        36
+#                    9, SW
+# 
+#                   10, reading data: Mem[        40] =>          0
+#                   10, reading data: Mem[         2] =>        256
+#                   10, reg_file[ 0] =>          0 (Port 2)
+run
+#                   11, reg_file[16] <=          3 (Write)
+#                   10, PC:        40
+#                   10, J
+# 
+#                   12, reg_file[17] <=        256 (Write)
+#                   12, writing data: Mem[         6] <=          3
+#                   11, PC:        48
+#                   11, wd:        256
+#                   11, NOP
+# 
+#                   12, PC:        52
+#                   12, wd:          x
+#                   12, NOP
+# 
+#                   13, reading data: Mem[        56] =>   41156633
+#                   13, PC:        56
+#                   13, wd:          x
+#                   13, NOP
+# 
+#                   14, reading data: Mem[        60] =>          0
+#                   14, reg_file[20] =>          5 (Port 2)
+#                   14, reg_file[19] =>          4 (Port 1)
+#                   14, PC:        60
+#                   14, wd:          x
+#                   14, MULTU
+# 
+#                   15, reg_file[ 0] =>          0 (Port 2)
+#                   15, reg_file[ 0] =>          0 (Port 1)
+#                   15, PC:        64
+#                   15, wd:          x
+#                   15, NOP
+# 
+#                   16, PC:        64
+#                   16, wd:          x
+#                   16, NOP
+# 
+#                   17, PC:        64
+#                   17, wd:          x
+#                   17, NOP
+# 
+#                   18, PC:        64
+#                   18, wd:          x
+#                   18, NOP
+# 
+#                   19, PC:        64
+#                   19, wd:          x
+#                   19, NOP
+# 
+run
+#                   20, PC:        64
+#                   20, wd:          x
+#                   20, NOP
+# 
+#                   21, PC:        64
+#                   21, wd:          x
+#                   21, NOP
+# 
+#                   22, PC:        64
+#                   22, wd:          x
+#                   22, NOP
+# 
+#                   23, PC:        64
+#                   23, wd:          x
+#                   23, NOP
+# 
+#                   24, PC:        64
+#                   24, wd:          x
+#                   24, NOP
+# 
+#                   25, PC:        64
+#                   25, wd:          x
+#                   25, NOP
+# 
+#                   26, PC:        64
+#                   26, wd:          x
+#                   26, NOP
+# 
+#                   27, PC:        64
+#                   27, wd:          x
+#                   27, NOP
+# 
+#                   28, PC:        64
+#                   28, wd:          x
+#                   28, NOP
+# 
+#                   29, PC:        64
+#                   29, wd:          x
+#                   29, NOP
+# 
+run
+#                   30, PC:        64
+#                   30, wd:          x
+#                   30, NOP
+# 
+#                   31, PC:        64
+#                   31, wd:          x
+#                   31, NOP
+# 
+#                   32, PC:        64
+#                   32, wd:          x
+#                   32, NOP
+# 
+#                   33, PC:        64
+#                   33, wd:          x
+#                   33, NOP
+# 
+#                   34, PC:        64
+#                   34, wd:          x
+#                   34, NOP
+# 
+#                   35, PC:        64
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        64
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, PC:        64
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, PC:        64
+#                   38, wd:          x
+#                   38, NOP
+# 
+#                   39, PC:        64
+#                   39, wd:          x
+#                   39, NOP
+# 
+run
+#                   40, PC:        64
+#                   40, wd:          x
+#                   40, NOP
+# 
+#                   41, PC:        64
+#                   41, wd:          x
+#                   41, NOP
+# 
+#                   42, PC:        64
+#                   42, wd:          x
+#                   42, NOP
+# 
+#                   43, PC:        64
+#                   43, wd:          x
+#                   43, NOP
+# 
+#                   44, PC:        64
+#                   44, wd:          x
+#                   44, NOP
+# 
+#                   45, PC:        64
+#                   45, wd:          x
+#                   45, NOP
+# 
+#                   46, PC:        64
+#                   46, wd:          x
+#                   46, NOP
+# 
+#                   47, PC:        64
+#                   47, wd:          x
+#                   47, NOP
+# 
+#                   48, PC:        68
+#                   48, wd:          x
+#                   48, NOP
+# 
+#                   49, PC:        72
+#                   49, wd:          x
+#                   49, NOP
+# 
+#                   50, reading data: Mem[        76] =>      43024
+run
+#                   50, PC:        76
+#                   50, wd:          x
+#                   50, NOP
+# 
+#                   51, reading data: Mem[        80] =>      45074
+#                   51, PC:        80
+#                   51, wd:          x
+#                   51, MFHI
+# 
+#                   52, reading data: Mem[        84] => 1920204801
+#                   52, PC:        84
+#                   52, wd:          x
+#                   52, MFLO
+# 
+#                   53, reading data: Mem[        88] =>          0
+#                   53, reg_file[20] =>          5 (Port 2)
+#                   53, reg_file[19] =>          4 (Port 1)
+#                   53, PC:        88
+#                   53, MADDU
+# 
+#                   54, reg_file[ 0] =>          0 (Port 2)
+#                   54, reg_file[ 0] =>          0 (Port 1)
+#                   54, PC:        92
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   55, PC:        92
+#                   55, wd:          0
+#                   55, NOP
+# 
+#                   56, PC:        92
+#                   56, wd:          0
+#                   56, NOP
+# 
+#                   57, PC:        92
+#                   57, wd:          0
+#                   57, NOP
+# 
+#                   58, PC:        92
+#                   58, wd:          0
+#                   58, NOP
+# 
+#                   59, PC:        92
+#                   59, wd:          0
+#                   59, NOP
+# 
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+add wave -position insertpoint sim:/tb_SingleCycle/CPU/*
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   17387552
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>   19421218
+#                    1, reg_file[ 9] =>          2 (Port 2)
+#                    1, reg_file[ 8] =>          1 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, ADD
+# 
+#                    2, reading data: Mem[         8] =>   17391652
+#                    2, reg_file[ 8] =>          1 (Port 2)
+#                    2, reg_file[ 9] =>          2 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, SUB
+# 
+#                    3, reading data: Mem[        12] =>   17393701
+#                    3, reg_file[ 9] =>          2 (Port 2)
+#                    3, reg_file[ 8] =>          1 (Port 1)
+#                    3, PC:        12
+#                    3, wd:          x
+#                    3, AND
+# 
+#                    4, reading data: Mem[        16] =>     618562
+#                    5, reg_file[10] <=          3 (Write)
+#                    4, PC:        16
+#                    4, wd:          3
+#                    4, OR
+# 
+#                    5, reading data: Mem[        20] =>   17397802
+#                    5, reg_file[ 0] =>          0 (Port 1)
+#                    6, reg_file[11] <=          1 (Write)
+#                    5, PC:        20
+#                    5, wd:          1
+#                    5, SRL
+# 
+#                    6, reading data: Mem[        24] =>  621805570
+#                    6, reg_file[ 8] =>          1 (Port 1)
+#                    7, reg_file[12] <=          0 (Write)
+#                    6, PC:        24
+#                    6, wd:          0
+#                    6, SLT
+# 
+#                    7, reading data: Mem[        28] => 2349924354
+#                    7, reg_file[16] =>          1 (Port 2)
+#                    8, reg_file[13] <=          3 (Write)
+#                    7, PC:        28
+#                    7, ADDIU
+# 
+#                    8, reading data: Mem[        32] => 2886860806
+#                    8, reg_file[ 0] =>          0 (Port 1)
+#                    8, reg_file[17] =>          2 (Port 2)
+#                    9, reg_file[14] <=          1 (Write)
+#                    8, PC:        32
+#                    8, LW
+# 
+#                    9, reading data: Mem[        36] =>  134217740
+#                    9, reg_file[18] =>          3 (Port 2)
+#                   10, reg_file[15] <=          1 (Write)
+#                    9, PC:        36
+#                    9, SW
+# 
+#                   10, reading data: Mem[        40] =>          0
+#                   10, reading data: Mem[         2] =>        256
+#                   10, reg_file[ 0] =>          0 (Port 2)
+run
+#                   11, reg_file[16] <=          3 (Write)
+#                   10, PC:        40
+#                   10, J
+# 
+#                   12, reg_file[17] <=        256 (Write)
+#                   12, writing data: Mem[         6] <=          3
+#                   11, PC:        48
+#                   11, wd:        256
+#                   11, NOP
+# 
+#                   12, PC:        52
+#                   12, wd:          x
+#                   12, NOP
+# 
+#                   13, reading data: Mem[        56] =>   41156633
+#                   13, PC:        56
+#                   13, wd:          x
+#                   13, NOP
+# 
+#                   14, reading data: Mem[        60] =>          0
+#                   14, reg_file[20] =>          5 (Port 2)
+#                   14, reg_file[19] =>          4 (Port 1)
+#                   14, PC:        60
+#                   14, wd:          x
+#                   14, MULTU
+# 
+#                   15, reg_file[ 0] =>          0 (Port 2)
+#                   15, reg_file[ 0] =>          0 (Port 1)
+#                   15, PC:        64
+#                   15, wd:          x
+#                   15, NOP
+# 
+#                   16, PC:        64
+#                   16, wd:          x
+#                   16, NOP
+# 
+#                   17, PC:        64
+#                   17, wd:          x
+#                   17, NOP
+# 
+#                   18, PC:        64
+#                   18, wd:          x
+#                   18, NOP
+# 
+#                   19, PC:        64
+#                   19, wd:          x
+#                   19, NOP
+# 
+run
+#                   20, PC:        64
+#                   20, wd:          x
+#                   20, NOP
+# 
+#                   21, PC:        64
+#                   21, wd:          x
+#                   21, NOP
+# 
+#                   22, PC:        64
+#                   22, wd:          x
+#                   22, NOP
+# 
+#                   23, PC:        64
+#                   23, wd:          x
+#                   23, NOP
+# 
+#                   24, PC:        64
+#                   24, wd:          x
+#                   24, NOP
+# 
+#                   25, PC:        64
+#                   25, wd:          x
+#                   25, NOP
+# 
+#                   26, PC:        64
+#                   26, wd:          x
+#                   26, NOP
+# 
+#                   27, PC:        64
+#                   27, wd:          x
+#                   27, NOP
+# 
+#                   28, PC:        64
+#                   28, wd:          x
+#                   28, NOP
+# 
+#                   29, PC:        64
+#                   29, wd:          x
+#                   29, NOP
+# 
+run
+#                   30, PC:        64
+#                   30, wd:          x
+#                   30, NOP
+# 
+#                   31, PC:        64
+#                   31, wd:          x
+#                   31, NOP
+# 
+#                   32, PC:        64
+#                   32, wd:          x
+#                   32, NOP
+# 
+#                   33, PC:        64
+#                   33, wd:          x
+#                   33, NOP
+# 
+#                   34, PC:        64
+#                   34, wd:          x
+#                   34, NOP
+# 
+#                   35, PC:        64
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        64
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, PC:        64
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, PC:        64
+#                   38, wd:          x
+#                   38, NOP
+# 
+#                   39, PC:        64
+#                   39, wd:          x
+#                   39, NOP
+# 
+run
+#                   40, PC:        64
+#                   40, wd:          x
+#                   40, NOP
+# 
+#                   41, PC:        64
+#                   41, wd:          x
+#                   41, NOP
+# 
+#                   42, PC:        64
+#                   42, wd:          x
+#                   42, NOP
+# 
+#                   43, PC:        64
+#                   43, wd:          x
+#                   43, NOP
+# 
+#                   44, PC:        64
+#                   44, wd:          x
+#                   44, NOP
+# 
+#                   45, PC:        64
+#                   45, wd:          x
+#                   45, NOP
+# 
+#                   46, PC:        64
+#                   46, wd:          x
+#                   46, NOP
+# 
+#                   47, PC:        64
+#                   47, wd:          x
+#                   47, NOP
+# 
+#                   48, PC:        68
+#                   48, wd:          x
+#                   48, NOP
+# 
+#                   49, PC:        72
+#                   49, wd:          x
+#                   49, NOP
+# 
+#                   50, reading data: Mem[        76] =>      43024
+run
+#                   50, PC:        76
+#                   50, wd:          x
+#                   50, NOP
+# 
+#                   51, reading data: Mem[        80] =>      45074
+#                   51, PC:        80
+#                   51, wd:          x
+#                   51, MFHI
+# 
+#                   52, reading data: Mem[        84] =>          0
+#                   52, PC:        84
+#                   52, wd:          x
+#                   52, MFLO
+# 
+#                   53, PC:        88
+#                   53, wd:          x
+#                   53, NOP
+# 
+#                   55, reg_file[21] <=          0 (Write)
+#                   54, PC:        92
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   56, reg_file[22] <=         20 (Write)
+#                   55, PC:        96
+#                   55, wd:         20
+#                   55, NOP
+# 
+#                   56, reading data: Mem[       100] => 1920204801
+#                   56, PC:       100
+#                   56, wd:          x
+#                   56, NOP
+# 
+#                   57, reading data: Mem[       104] =>          0
+#                   57, reg_file[20] =>          5 (Port 2)
+#                   57, reg_file[19] =>          4 (Port 1)
+#                   57, PC:       104
+#                   57, MADDU
+# 
+#                   58, reg_file[ 0] =>          0 (Port 2)
+#                   58, reg_file[ 0] =>          0 (Port 1)
+#                   58, PC:       108
+#                   58, wd:          x
+#                   58, NOP
+# 
+#                   59, PC:       108
+#                   59, wd:          x
+#                   59, NOP
+# 
+run
+#                   60, PC:       108
+#                   60, wd:          x
+#                   60, NOP
+# 
+#                   61, PC:       108
+#                   61, wd:          x
+#                   61, NOP
+# 
+#                   62, PC:       108
+#                   62, wd:          x
+#                   62, NOP
+# 
+#                   63, PC:       108
+#                   63, wd:          x
+#                   63, NOP
+# 
+#                   64, PC:       108
+#                   64, wd:          x
+#                   64, NOP
+# 
+#                   65, PC:       108
+#                   65, wd:          x
+#                   65, NOP
+# 
+#                   66, PC:       108
+#                   66, wd:          x
+#                   66, NOP
+# 
+#                   67, PC:       108
+#                   67, wd:          x
+#                   67, NOP
+# 
+#                   68, PC:       108
+#                   68, wd:          x
+#                   68, NOP
+# 
+#                   69, PC:       108
+#                   69, wd:          x
+#                   69, NOP
+# 
+run
+#                   70, PC:       108
+#                   70, wd:          x
+#                   70, NOP
+# 
+#                   71, PC:       108
+#                   71, wd:          x
+#                   71, NOP
+# 
+#                   72, PC:       108
+#                   72, wd:          x
+#                   72, NOP
+# 
+#                   73, PC:       108
+#                   73, wd:          x
+#                   73, NOP
+# 
+#                   74, PC:       108
+#                   74, wd:          x
+#                   74, NOP
+# 
+#                   75, PC:       108
+#                   75, wd:          x
+#                   75, NOP
+# 
+#                   76, PC:       108
+#                   76, wd:          x
+#                   76, NOP
+# 
+#                   77, PC:       108
+#                   77, wd:          x
+#                   77, NOP
+# 
+#                   78, PC:       108
+#                   78, wd:          x
+#                   78, NOP
+# 
+#                   79, PC:       108
+#                   79, wd:          x
+#                   79, NOP
+# 
+run
+#                   80, PC:       108
+#                   80, wd:          x
+#                   80, NOP
+# 
+#                   81, PC:       108
+#                   81, wd:          x
+#                   81, NOP
+# 
+#                   82, PC:       108
+#                   82, wd:          x
+#                   82, NOP
+# 
+#                   83, PC:       108
+#                   83, wd:          x
+#                   83, NOP
+# 
+#                   84, PC:       108
+#                   84, wd:          x
+#                   84, NOP
+# 
+#                   85, PC:       108
+#                   85, wd:          x
+#                   85, NOP
+# 
+#                   86, PC:       108
+#                   86, wd:          x
+#                   86, NOP
+# 
+#                   87, PC:       108
+#                   87, wd:          x
+#                   87, NOP
+# 
+#                   88, PC:       108
+#                   88, wd:          x
+#                   88, NOP
+# 
+#                   89, PC:       108
+#                   89, wd:          x
+#                   89, NOP
+# 
+run
+#                   90, PC:       108
+#                   90, wd:          x
+#                   90, NOP
+# 
+#                   91, PC:       112
+#                   91, wd:          x
+#                   91, NOP
+# 
+#                   92, PC:       116
+#                   92, wd:          x
+#                   92, NOP
+# 
+#                   93, reading data: Mem[       120] =>      43024
+#                   93, PC:       120
+#                   93, wd:          x
+#                   93, NOP
+# 
+#                   94, reading data: Mem[       124] =>      45074
+#                   94, PC:       124
+#                   94, wd:          x
+#                   94, MFHI
+# 
+#                   95, reading data: Mem[       128] =>          0
+#                   95, PC:       128
+#                   95, wd:          x
+#                   95, MFLO
+# 
+#                   96, PC:       132
+#                   96, wd:          x
+#                   96, NOP
+# 
+#                   98, reg_file[21] <=          0 (Write)
+#                   97, PC:       136
+#                   97, wd:          0
+#                   97, NOP
+# 
+#                   99, reg_file[22] <=         40 (Write)
+#                   98, PC:       140
+#                   98, wd:         40
+#                   98, NOP
+# 
+#                   99, reading data: Mem[       144] =>          x
+#                   99, PC:       144
+#                   99, wd:          x
+#                   99, NOP
+# 
+#                  100, reg_file[ x] =>          x (Port 2)
+#                  100, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                  100, PC:       148
+#                  101, PC:         x
+#                  102, PC:         x
+#                  103, PC:         x
+#                  104, PC:         x
+#                  105, PC:         x
+#                  106, PC:         x
+#                  107, PC:         x
+#                  108, PC:         x
+#                  109, PC:         x
+quit -sim
+vsim -voptargs=+acc work.tb_SingleCycle
+# vsim -voptargs=+acc work.tb_SingleCycle 
+# Loading work.tb_SingleCycle
+# Loading work.mips_single
+# Loading work.reg32
+# Loading work.sign_extend
+# Loading work.add32
+# Loading work.ALU
+# Loading work.ALU_slice
+# Loading work.FA
+# Loading work.Shifter
+# Loading work.Mux_2to1
+# Loading work.Multiplier
+# Loading work.HiLo
+# Loading work.branch_equ
+# Loading work.mux2
+# Loading work.mux4
+# Loading work.control_single
+# Loading work.alu_ctl
+# Loading work.reg_file
+# Loading work.memory
+# Loading work.IF_ID
+# Loading work.ID_EX
+# Loading work.EX_MEM
+# Loading work.MEM_WB
+run
+#                    0, reading data: Mem[         x] =>          x
+# 18446744073709551615, PC:         x
+#                    0, reading data: Mem[         0] =>   17387552
+#                    0, reg_file[ 0] =>          0 (Port 2)
+#                    0, reg_file[ 0] =>          0 (Port 1)
+#                    0, PC:         0
+#                    0, wd:          0
+#                    0, NOP
+# 
+#                    1, reading data: Mem[         4] =>   19421218
+#                    1, reg_file[ 9] =>          2 (Port 2)
+#                    1, reg_file[ 8] =>          1 (Port 1)
+#                    1, PC:         4
+#                    1, wd:          0
+#                    1, ADD
+# 
+#                    2, reading data: Mem[         8] =>   17391652
+#                    2, reg_file[ 8] =>          1 (Port 2)
+#                    2, reg_file[ 9] =>          2 (Port 1)
+#                    2, PC:         8
+#                    2, wd:          0
+#                    2, SUB
+# 
+#                    3, reading data: Mem[        12] =>   17393701
+#                    3, reg_file[ 9] =>          2 (Port 2)
+#                    3, reg_file[ 8] =>          1 (Port 1)
+#                    3, PC:        12
+#                    3, wd:          x
+#                    3, AND
+# 
+#                    4, reading data: Mem[        16] =>     618562
+#                    5, reg_file[10] <=          3 (Write)
+#                    4, PC:        16
+#                    4, wd:          3
+#                    4, OR
+# 
+#                    5, reading data: Mem[        20] =>   17397802
+#                    5, reg_file[ 0] =>          0 (Port 1)
+#                    6, reg_file[11] <=          1 (Write)
+#                    5, PC:        20
+#                    5, wd:          1
+#                    5, SRL
+# 
+#                    6, reading data: Mem[        24] =>  621805570
+#                    6, reg_file[ 8] =>          1 (Port 1)
+#                    7, reg_file[12] <=          0 (Write)
+#                    6, PC:        24
+#                    6, wd:          0
+#                    6, SLT
+# 
+#                    7, reading data: Mem[        28] => 2349924354
+#                    7, reg_file[16] =>          1 (Port 2)
+#                    8, reg_file[13] <=          3 (Write)
+#                    7, PC:        28
+#                    7, ADDIU
+# 
+#                    8, reading data: Mem[        32] => 2886860806
+#                    8, reg_file[ 0] =>          0 (Port 1)
+#                    8, reg_file[17] =>          2 (Port 2)
+#                    9, reg_file[14] <=          1 (Write)
+#                    8, PC:        32
+#                    8, LW
+# 
+#                    9, reading data: Mem[        36] =>  134217740
+#                    9, reg_file[18] =>          3 (Port 2)
+#                   10, reg_file[15] <=          1 (Write)
+#                    9, PC:        36
+#                    9, SW
+# 
+#                   10, reading data: Mem[        40] =>          0
+#                   10, reading data: Mem[         2] =>        256
+#                   10, reg_file[ 0] =>          0 (Port 2)
+run
+#                   11, reg_file[16] <=          3 (Write)
+#                   10, PC:        40
+#                   10, J
+# 
+#                   11, reading data: Mem[        48] =>  285933570
+#                   12, reg_file[17] <=        256 (Write)
+#                   12, writing data: Mem[         6] <=          3
+#                   11, PC:        48
+#                   11, wd:        256
+#                   11, NOP
+# 
+#                   12, reading data: Mem[        52] =>          0
+#                   12, reg_file[ 8] =>          1 (Port 1)
+#                   12, reg_file[11] =>          1 (Port 2)
+#                   12, PC:        52
+#                   12, BEQ
+# 
+#                   13, reading data: Mem[        60] =>   41156633
+#                   13, reg_file[ 0] =>          0 (Port 2)
+#                   13, reg_file[ 0] =>          0 (Port 1)
+#                   13, PC:        60
+#                   13, wd:          x
+#                   13, NOP
+# 
+#                   14, reading data: Mem[        64] =>          0
+#                   14, reg_file[20] =>          5 (Port 2)
+#                   14, reg_file[19] =>          4 (Port 1)
+#                   14, PC:        64
+#                   14, wd:          x
+#                   14, MULTU
+# 
+#                   15, reg_file[ 0] =>          0 (Port 2)
+#                   15, reg_file[ 0] =>          0 (Port 1)
+#                   15, PC:        68
+#                   15, wd:          x
+#                   15, NOP
+# 
+#                   16, PC:        68
+#                   16, wd:          x
+#                   16, NOP
+# 
+#                   17, PC:        68
+#                   17, wd:          x
+#                   17, NOP
+# 
+#                   18, PC:        68
+#                   18, wd:          x
+#                   18, NOP
+# 
+#                   19, PC:        68
+#                   19, wd:          x
+#                   19, NOP
+# 
+run
+#                   20, PC:        68
+#                   20, wd:          x
+#                   20, NOP
+# 
+#                   21, PC:        68
+#                   21, wd:          x
+#                   21, NOP
+# 
+#                   22, PC:        68
+#                   22, wd:          x
+#                   22, NOP
+# 
+#                   23, PC:        68
+#                   23, wd:          x
+#                   23, NOP
+# 
+#                   24, PC:        68
+#                   24, wd:          x
+#                   24, NOP
+# 
+#                   25, PC:        68
+#                   25, wd:          x
+#                   25, NOP
+# 
+#                   26, PC:        68
+#                   26, wd:          x
+#                   26, NOP
+# 
+#                   27, PC:        68
+#                   27, wd:          x
+#                   27, NOP
+# 
+#                   28, PC:        68
+#                   28, wd:          x
+#                   28, NOP
+# 
+#                   29, PC:        68
+#                   29, wd:          x
+#                   29, NOP
+# 
+run
+#                   30, PC:        68
+#                   30, wd:          x
+#                   30, NOP
+# 
+#                   31, PC:        68
+#                   31, wd:          x
+#                   31, NOP
+# 
+#                   32, PC:        68
+#                   32, wd:          x
+#                   32, NOP
+# 
+#                   33, PC:        68
+#                   33, wd:          x
+#                   33, NOP
+# 
+#                   34, PC:        68
+#                   34, wd:          x
+#                   34, NOP
+# 
+#                   35, PC:        68
+#                   35, wd:          x
+#                   35, NOP
+# 
+#                   36, PC:        68
+#                   36, wd:          x
+#                   36, NOP
+# 
+#                   37, PC:        68
+#                   37, wd:          x
+#                   37, NOP
+# 
+#                   38, PC:        68
+#                   38, wd:          x
+#                   38, NOP
+# 
+#                   39, PC:        68
+#                   39, wd:          x
+#                   39, NOP
+# 
+run
+#                   40, PC:        68
+#                   40, wd:          x
+#                   40, NOP
+# 
+#                   41, PC:        68
+#                   41, wd:          x
+#                   41, NOP
+# 
+#                   42, PC:        68
+#                   42, wd:          x
+#                   42, NOP
+# 
+#                   43, PC:        68
+#                   43, wd:          x
+#                   43, NOP
+# 
+#                   44, PC:        68
+#                   44, wd:          x
+#                   44, NOP
+# 
+#                   45, PC:        68
+#                   45, wd:          x
+#                   45, NOP
+# 
+#                   46, PC:        68
+#                   46, wd:          x
+#                   46, NOP
+# 
+#                   47, PC:        68
+#                   47, wd:          x
+#                   47, NOP
+# 
+#                   48, PC:        72
+#                   48, wd:          x
+#                   48, NOP
+# 
+#                   49, PC:        76
+#                   49, wd:          x
+#                   49, NOP
+# 
+#                   50, reading data: Mem[        80] =>      43024
+run
+#                   50, PC:        80
+#                   50, wd:          x
+#                   50, NOP
+# 
+#                   51, reading data: Mem[        84] =>      45074
+#                   51, PC:        84
+#                   51, wd:          x
+#                   51, MFHI
+# 
+#                   52, reading data: Mem[        88] =>          0
+#                   52, PC:        88
+#                   52, wd:          x
+#                   52, MFLO
+# 
+#                   53, PC:        92
+#                   53, wd:          x
+#                   53, NOP
+# 
+#                   55, reg_file[21] <=          0 (Write)
+#                   54, PC:        96
+#                   54, wd:          0
+#                   54, NOP
+# 
+#                   56, reg_file[22] <=         20 (Write)
+#                   55, PC:       100
+#                   55, wd:         20
+#                   55, NOP
+# 
+#                   56, reading data: Mem[       104] => 1920204801
+#                   56, PC:       104
+#                   56, wd:          x
+#                   56, NOP
+# 
+#                   57, reading data: Mem[       108] =>          0
+#                   57, reg_file[20] =>          5 (Port 2)
+#                   57, reg_file[19] =>          4 (Port 1)
+#                   57, PC:       108
+#                   57, MADDU
+# 
+#                   58, reg_file[ 0] =>          0 (Port 2)
+#                   58, reg_file[ 0] =>          0 (Port 1)
+#                   58, PC:       112
+#                   58, wd:          x
+#                   58, NOP
+# 
+#                   59, PC:       112
+#                   59, wd:          x
+#                   59, NOP
+# 
+run
+#                   60, PC:       112
+#                   60, wd:          x
+#                   60, NOP
+# 
+#                   61, PC:       112
+#                   61, wd:          x
+#                   61, NOP
+# 
+#                   62, PC:       112
+#                   62, wd:          x
+#                   62, NOP
+# 
+#                   63, PC:       112
+#                   63, wd:          x
+#                   63, NOP
+# 
+#                   64, PC:       112
+#                   64, wd:          x
+#                   64, NOP
+# 
+#                   65, PC:       112
+#                   65, wd:          x
+#                   65, NOP
+# 
+#                   66, PC:       112
+#                   66, wd:          x
+#                   66, NOP
+# 
+#                   67, PC:       112
+#                   67, wd:          x
+#                   67, NOP
+# 
+#                   68, PC:       112
+#                   68, wd:          x
+#                   68, NOP
+# 
+#                   69, PC:       112
+#                   69, wd:          x
+#                   69, NOP
+# 
+run
+#                   70, PC:       112
+#                   70, wd:          x
+#                   70, NOP
+# 
+#                   71, PC:       112
+#                   71, wd:          x
+#                   71, NOP
+# 
+#                   72, PC:       112
+#                   72, wd:          x
+#                   72, NOP
+# 
+#                   73, PC:       112
+#                   73, wd:          x
+#                   73, NOP
+# 
+#                   74, PC:       112
+#                   74, wd:          x
+#                   74, NOP
+# 
+#                   75, PC:       112
+#                   75, wd:          x
+#                   75, NOP
+# 
+#                   76, PC:       112
+#                   76, wd:          x
+#                   76, NOP
+# 
+#                   77, PC:       112
+#                   77, wd:          x
+#                   77, NOP
+# 
+#                   78, PC:       112
+#                   78, wd:          x
+#                   78, NOP
+# 
+#                   79, PC:       112
+#                   79, wd:          x
+#                   79, NOP
+# 
+run
+#                   80, PC:       112
+#                   80, wd:          x
+#                   80, NOP
+# 
+#                   81, PC:       112
+#                   81, wd:          x
+#                   81, NOP
+# 
+#                   82, PC:       112
+#                   82, wd:          x
+#                   82, NOP
+# 
+#                   83, PC:       112
+#                   83, wd:          x
+#                   83, NOP
+# 
+#                   84, PC:       112
+#                   84, wd:          x
+#                   84, NOP
+# 
+#                   85, PC:       112
+#                   85, wd:          x
+#                   85, NOP
+# 
+#                   86, PC:       112
+#                   86, wd:          x
+#                   86, NOP
+# 
+#                   87, PC:       112
+#                   87, wd:          x
+#                   87, NOP
+# 
+#                   88, PC:       112
+#                   88, wd:          x
+#                   88, NOP
+# 
+#                   89, PC:       112
+#                   89, wd:          x
+#                   89, NOP
+# 
+run
+#                   90, PC:       112
+#                   90, wd:          x
+#                   90, NOP
+# 
+#                   91, PC:       116
+#                   91, wd:          x
+#                   91, NOP
+# 
+#                   92, PC:       120
+#                   92, wd:          x
+#                   92, NOP
+# 
+#                   93, reading data: Mem[       124] =>      43024
+#                   93, PC:       124
+#                   93, wd:          x
+#                   93, NOP
+# 
+#                   94, reading data: Mem[       128] =>      45074
+#                   94, PC:       128
+#                   94, wd:          x
+#                   94, MFHI
+# 
+#                   95, reading data: Mem[       132] =>          0
+#                   95, PC:       132
+#                   95, wd:          x
+#                   95, MFLO
+# 
+#                   96, PC:       136
+#                   96, wd:          x
+#                   96, NOP
+# 
+#                   98, reg_file[21] <=          0 (Write)
+#                   97, PC:       140
+#                   97, wd:          0
+#                   97, NOP
+# 
+#                   99, reg_file[22] <=         40 (Write)
+#                   98, PC:       144
+#                   98, wd:         40
+#                   98, NOP
+# 
+#                   99, reading data: Mem[       148] =>          x
+#                   99, PC:       148
+#                   99, wd:          x
+#                   99, NOP
+# 
+#                  100, reg_file[ x] =>          x (Port 2)
+#                  100, reg_file[ x] =>          x (Port 1)
+# control_single unimplemented opcode  x
+run
+#                  100, PC:       152
+#                  101, PC:         x
+#                  102, PC:         x
+#                  103, PC:         x
+#                  104, PC:         x
+#                  105, PC:         x
+#                  106, PC:         x
+#                  107, PC:         x
+#                  108, PC:         x
+#                  109, PC:         x
