@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1672669272 source:/home/pi/final_project/project/drawJuliaSet.s
+
+1672827879 source:/home/pi/final_project/project/main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<sys/mman.h>
+	<fcntl.h>
+
+1672669297 source:/home/pi/final_project/project/name.s
+
+1672669238 source:/home/pi/final_project/project/id.s
+
